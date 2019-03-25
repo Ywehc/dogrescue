@@ -10,16 +10,16 @@ class Footer extends Component {
       privacyVisibile: false,
       aboutVisibile: false,
     };
-    this.togglePrivacyVisible = this.togglePrivacyVisible.bind(this);
-    this.toggleAboutVisible = this.toggleAboutVisible.bind(this);
+    this.togglePrivacy = this.togglePrivacy.bind(this);
+    this.toggleAbout = this.toggleAbout.bind(this);
   }
 
-    togglePrivacyVisible = () => {
+    togglePrivacy = () => {
       const { privacyVisibile } = this.state;
       this.setState({ privacyVisibile: !privacyVisibile });
     }
 
-    toggleAboutVisible = () => {
+    toggleAbout = () => {
       const { aboutVisibile } = this.state;
       this.setState({ aboutVisibile: !aboutVisibile });
     }
@@ -27,12 +27,12 @@ class Footer extends Component {
     render() {
       return (
         <div>
-          {this.state.aboutVisibile && <About />}
-            <ul className="footer-menu">
-                <li onClick={this.toggleAboutVisible}>About</li>
-                <li onClick={this.togglePrivacyVisible}>Privacy</li>
-                <li>&copy; 2019 Chris Kieran</li>
-            </ul>
+          {<About /> && this.state.aboutVisibile}
+          <ul className="footer-menu">
+            <li onClick={this.toggleAbout}>About</li>
+            <li onClick={this.togglePrivacy}>Privacy</li>
+            <li>&copy; 2019 Chris Kieran</li>
+          </ul>
           {this.state.privacyVisibile && <Privacy />}
         </div>
       );
