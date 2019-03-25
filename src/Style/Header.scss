@@ -1,0 +1,50 @@
+$white: #FFFFFF;
+$teal: #3E8E94;
+$lightgreen: #A2B484;
+$rust: #D1613F;
+$mediumgreen: #668E59;
+
+.logo {
+  width: 40%;
+  padding: 10px;
+  text-align: right;
+}
+.logo img {
+  width: 120px;
+  border-radius: 50%;
+  margin:auto;
+  border: 4px solid $lightgreen;
+}
+h1 {
+    font-family: 'Spectral SC', serif;
+    font-size: 230%;
+    font-weight: lighter;
+    margin: 10px 0;
+}
+.lighter {
+    font-weight: lighter;
+}
+header {
+  color: $teal;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.title {
+  width:60%;
+}
+p {
+    font-size: 110%;
+    margin: 0;
+    font-family: 'Spectral SC', serif;
+}
+
+.highlight {
+  color: $rust;
+}
+.subheader-bestfriend {
+  color: $lightgreen;
+}
+.subheader-home {
+  color: $mediumgreen;
+}

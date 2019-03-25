@@ -1,0 +1,75 @@
+$white: #FFFFFF;
+$teal: #3E8E94;
+$lightgreen: #A2B484;
+$rust: #D1613F;
+$mediumgreen: #668E59;
+
+.subheading {
+    background: $white;
+    color: $teal;
+    text-align: center;
+    padding: 10px;
+    font-size: 90%;
+    font-family: 'Lato', serif;
+}
+.main {
+    background-image: url("https://lh3.googleusercontent.com/Qdxx-XW25xW-y5La7oc89hWX_tiLb-iaNxGyaJ6bUmN-oS-VgfUHAR-DmtQT-hQvql263W4NOO41m7SHVAOB_JNRv0m31NK-vS3K1KUBLAI4VPBsPpuJZrr82ILxmUwe3eH3HW7boTJPfM520IHSKAYX7s_jHFIW4SWCo3F9B0ZmiP3wzPEZnuAPwiB6zaNcefRBn-WasT2jExzWwK47hHBevvRLrUYB4yrG4XQJQ3qa46aVOOzZLdl1M6s12eJ0RkYv-8ehHxdLaFhEns5Z1AG9QbYjqO9WBLmuYzfcxlxDPDogLrHisE7nLwOE5_odczLeotkc_89lsB4KB9bcNub_imejw3aoc4kDPIEMWf7QM3kBlvQfSxgzX7IeTcGmEffwxMMUr0MCudh3WYCmxTrr190b38LbCsrbM13q3IC473xawDOt6ng3inyfEYjlWdrCOe23eJhM_IQEcYWvcP67EqWrXHViujLkqG_UFS8hEFgQzNlVDK1xgSBCyokfIqNc0mThOu75SZBrqRPaEGnT8XAd9yFQUqUVTEXeVj1aEeoycQ2rlX-EZf-h7lawHT1UHoQQmTBVDLwkDXNB2O89XeeAtBoh6pOPUse2UetyiDYxA9ohIsfLhkCkjBOPVps8RA3iPtGG2-SoY-NbkkV1XgklZ5Q=w599-h903-no");
+    background-size: cover;
+    padding: 10px;
+    font-family: 'Lato', serif;
+    max-width: 400px;
+    min-height: 300px;
+    background-position-y: -50px;
+}
+form {
+    margin: auto;
+    text-align: center;
+}
+input::placeholder {
+    color: $white;
+    text-align: center;
+}
+.postalInput {
+    border: 4px solid $rust;
+    margin-top: 70px;
+    background: transparent;
+}
+.submitButton {
+    background: $white;
+    color: $teal;
+    border: 4px solid $teal;
+    margin-top: 30px;
+}
+.postalInput, .submitButton {
+    border-radius: 5%;
+    padding: 5px;
+    font-family: 'Lato', serif;
+    font-weight: bold;
+    font-size: 110%;
+
+}
+@media screen and (min-width: 442px) {
+    .main {
+        background-position-y: -80px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}  
+
+@media screen and (min-width: 900px) {
+    .main {
+       background-image: url("https://images.unsplash.com/photo-1488643673641-1527a227662e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2066&q=80");
+       max-width: none;
+       background-position-y: none;
+       max-width: 900px;
+       background-position: 100%;
+    }
+    .main form {
+        display: inline-block;
+    }
+    .postalInput, .submitButton {
+        margin: 20px;
+        font-size: 120%;
+        padding: 10px;
+    }
+} 

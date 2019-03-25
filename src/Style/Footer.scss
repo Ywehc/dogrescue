@@ -1,0 +1,33 @@
+$white: #FFFFFF;
+$teal: #3E8E94;
+$lightgreen: #A2B484;
+$rust: #D1613F;
+$mediumgreen: #668E59;
+
+.footer-menu {
+    display: flex;
+    list-style-type: none;
+    align-content: center;
+    color: $rust;
+    font-family: 'Spectral SC', serif;
+    font-size: 4vw;
+    padding: 0;
+}
+.footer-menu li {
+    margin: 2px auto;
+}
+.footer-menu a {
+    text-decoration: none;
+    color: $rust;
+}
+@media screen and (min-width: 442px) {
+    .footer-menu {
+        font-size: 2vw;
+    }
+} 
+@media screen and (min-width: 900px) {
+    .footer-menu {
+        font-size: 1.2vw;
+        padding: 20px;
+    }
+} 
