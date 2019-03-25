@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import './Main.scss';
-import './App.scss';
+import './Style/App.scss';
 
 class Subheading extends Component {
     render() {

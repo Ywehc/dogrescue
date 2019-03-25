@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './Style/App.scss';
 import './Main.scss';
 
 class MainInput extends Component {
