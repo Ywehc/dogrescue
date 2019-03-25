@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Style/App.scss';
-import './Privacy.scss';
+import './Style/Privacy.scss';
 
 class Privacy extends Component {
 

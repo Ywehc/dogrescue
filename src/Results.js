@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Style/App.scss';
-import './Main.scss';
-import './Results.scss';
+import './Style/Main.scss';
+import './Style/Results.scss';
 
 class Results extends Component {
     constructor() {

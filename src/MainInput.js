@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Style/App.scss';
-import './Main.scss';
+import './Style/Main.scss';
 
 class MainInput extends Component {
     constructor(props) {

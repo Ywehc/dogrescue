@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import './Main.scss';
+import './Style/Main.scss';
 import './Style/App.scss';
 
 class Subheading extends Component {
