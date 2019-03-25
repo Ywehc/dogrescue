@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
-import Results from './Results.js';
-import MainInput from './MainInput.js';
-import Subheading from './Subheading.js';
+import React from 'react';
+import Results from './Results';
+import MainInput from './MainInput';
+import Subheading from './Subheading';
 
-
-class Main extends Component {
-    render() {
-        return (
-            <div>
-                <MainInput />
-                <Subheading />
-                <Results />
-            </div>
-        )
-    }
-}
+const Main = () => (
+  <div>
+    <MainInput />
+    <Subheading />
+    <Results />
+  </div>
+);
 
 export default Main;
